@@ -1,8 +1,8 @@
 function setCookie(){
   var d = new Date();
-  var cMail = document.forms["userData"]["inputEmail"];
-  var cName = document.forms["userData"]["inputUserName"];
-  var cPhone = document.forms["userData"]["inputPhoneNumber"];
+  var cMail = document.forms['userData'].inputEmail.value;
+  var cName = document.forms['userData'].inputUserName.value;
+  var cPhone = document.forms['userData'].inputPhoneNumber.value;
 
   d.setTime(d.getTime() + (10*24*60*60*1000));
   var expires = "expires="+ d.toUTCString();
@@ -11,7 +11,8 @@ function setCookie(){
   document.cookie = "cName=" + cName + ";" + expires + ";path=/";
   document.cookie = "cPhone=" + cPhone + ";" + expires + ";path=/";
   console.log('setCookie');
-  return false
+  console.log('userData=', document.forms['userData'].inputEmail.value);
+  return true
 }
 console.log("welcome");
 

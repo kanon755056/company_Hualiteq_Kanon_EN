@@ -11,7 +11,6 @@
     <meta name="author" content="">
 
     <link rel="icon" href="https://seminar.ithome.com.tw/live/20170713/img/hualiteq-logo.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -60,28 +59,13 @@
       <div class="p-3 mb-2  text-white">
         <form name="userData" id="mainForm" method="post" action="chatRoom.html" class="form-signin" onsubmit="return setCookie()" data-toggle="validator">
             <img class="imgLog" src="https://seminar.ithome.com.tw/live/20170713/img/hualiteq-logo.png" alt="" width="300" height="auto">
-          <h1 class="h3 mb-3 font-weight-normal">Please enter profile</h1>
-          
-          <div class="form-group has-feedback">
-            <div class="input-group">
-              <label for="inputEmail" class="sr-only">Email address</label>
-              <input type="text" data-error="格式錯誤" pattern="^[_A-Za-z0-9]+@[_A-Za-z0-9\.]+$" id="inputEmail" class="form-control" placeholder="Email address" autofocus="" required>
-            </div>
-            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-            <div class="help-block with-errors"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputUserName" class="sr-only">姓名</label>
-            <input type="text" data-error="請填寫此欄位" id="inputPassword" class="form-control" placeholder="姓名" required>
-            <div class="help-block with-errors"></div>
-          </div>
-
-          <div class="form-group">
-            <label for="inputPhoneNumber" class="sr-only">電話</label>
-            <input type="tel" data-error="請填寫此欄位" id="inputPassword" class="form-control" placeholder="電話" required>
-            <div class="help-block with-errors"></div>
-          </div>
+          <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+          <label for="inputEmail" class="sr-only">Email address</label>
+          <input type="mail" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+          <label for="inputUserName" class="sr-only">姓名</label>
+          <input type="text" id="inputPassword" class="form-control" placeholder="姓名" required="">
+          <label for="inputPhoneNumber" class="sr-only">電話</label>
+          <input type="tel" id="inputPassword" class="form-control" placeholder="電話" required="">
           <!-- <div class="checkbox mb-3">
             <label>
               <input type="checkbox" value="remember-me"> Remember me

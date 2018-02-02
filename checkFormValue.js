@@ -1,0 +1,3 @@
+$('mainForm').validate({
+
+});
