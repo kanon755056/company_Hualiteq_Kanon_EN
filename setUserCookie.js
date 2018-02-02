@@ -10,6 +10,7 @@ function setCookie(){
   document.cookie = "cMail=" + cMail + ";" + expires + ";path=/";
   document.cookie = "cName=" + cName + ";" + expires + ";path=/";
   document.cookie = "cPhone=" + cPhone + ";" + expires + ";path=/";
+  return false
 }
 console.log("welcome");
 
