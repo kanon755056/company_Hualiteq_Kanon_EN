@@ -1,0 +1,22 @@
+html{
+  background: url(https://picsum.photos/2000/1250?image=638) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+ body{
+   background-color: transparent;
+ }
+ form{
+   margin:0px auto;
+   width: 40%;
+   min-width: 100px;
+   max-width: 300px;
+ }
+ .imgLog{
+   margin:0px auto;
+   width: 100%;
+   min-width: 100px;
+   max-width: 300px;
+ }
